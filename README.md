@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# MERN Kanban Board – Task Management Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack collaborative Kanban board built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+This web application allows multiple users to manage and track tasks across different stages such as **To Do**, **In Progress**, and **Done**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* Multi-user collaborative task management
+* Task organization using Kanban workflow (To Do, In Progress, Done)
+* RESTful API development using Node.js and Express
+* MongoDB Atlas integration for shared data storage
+* Real-time updates for seamless collaboration
+* Frontend-backend communication using Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React.js
+* Axios
+* CSS
 
-### `npm run build`
+### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Node.js
+* Express.js
+* MongoDB Atlas
+* Mongoose
+* CORS
+* Dotenv
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+kanban-app/
+│
+├── server/
+│   ├── client/
+│   ├── routes/
+│   ├── models/
+│   ├── .env
+│   ├── index.js
+│   └── package.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. Clone the repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone <your-repo-link>
+cd kanban-app/server
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Setup environment variables
 
-### Analyzing the Bundle Size
+Create a `.env` file inside the `server` folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+PORT=8000
+MONGO_URL=your_mongodb_connection_string
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 4. Run backend server
 
-### Advanced Configuration
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend runs on:
+http://localhost:8000
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 5. Run frontend
 
-### `npm run build` fails to minify
+cd client
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend runs on:
+http://localhost:3000
+
+---
+
+## 📌 API Test
+
+GET http://localhost:8000/
+
+Response:
+API is running...
+
+---
+
+## 📚 Learning Outcomes
+
+* Built a full-stack MERN web application
+* Designed REST APIs and integrated MongoDB Atlas
+* Implemented collaborative task management system
+* Connected frontend and backend for real-time interaction
+
+---
+
+## 🙋‍♀️ Author
+
+**Shivani Vishwakarma**
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
