@@ -1,7 +1,7 @@
 # MERN Kanban Board – Task Management Web Application
 
 A full-stack collaborative Kanban board built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
-This web application allows multiple users to manage and track tasks across different stages such as **To Do**, **In Progress**, and **Done**.
+This web application allows multiple users to manage and track tasks across different stages such as **To Do**, **In Progress**, and **Done** with real-time updates.
 
 ---
 
@@ -11,7 +11,7 @@ This web application allows multiple users to manage and track tasks across diff
 * Task organization using Kanban workflow (To Do, In Progress, Done)
 * RESTful API development using Node.js and Express
 * MongoDB Atlas integration for shared data storage
-* Real-time updates for seamless collaboration
+* Real-time updates using Socket.io (no page reload required)
 * Frontend-backend communication using Axios
 
 ---
@@ -30,6 +30,7 @@ This web application allows multiple users to manage and track tasks across diff
 * Express.js
 * MongoDB Atlas
 * Mongoose
+* Socket.io
 * CORS
 * Dotenv
 
@@ -40,11 +41,15 @@ This web application allows multiple users to manage and track tasks across diff
 kanban-app/
 │
 ├── server/
-│   ├── client/
 │   ├── routes/
 │   ├── models/
 │   ├── .env
 │   ├── index.js
+│   └── package.json
+│
+├── client/
+│   ├── src/
+│   ├── public/
 │   └── package.json
 
 ---
@@ -54,37 +59,29 @@ kanban-app/
 ### 1. Clone the repository
 
 git clone <your-repo-link>
-cd kanban-app/server
+cd kanban-app
 
 ---
 
-### 2. Install dependencies
+### 2. Setup Backend
 
+cd server
 npm install
 
----
-
-### 3. Setup environment variables
-
-Create a `.env` file inside the `server` folder:
+Create a `.env` file:
 
 PORT=8000
 MONGO_URL=your_mongodb_connection_string
 
----
-
-### 4. Run backend server
+Start backend:
 
 npm start
 
-Backend runs on:
-http://localhost:8000
-
 ---
 
-### 5. Run frontend
+### 3. Setup Frontend
 
-cd client
+cd ../client
 npm install
 npm start
 
@@ -106,8 +103,8 @@ API is running...
 
 * Built a full-stack MERN web application
 * Designed REST APIs and integrated MongoDB Atlas
-* Implemented collaborative task management system
-* Connected frontend and backend for real-time interaction
+* Implemented real-time updates using Socket.io
+* Developed a collaborative task management system
 
 ---
 
