@@ -1,153 +1,70 @@
-# MERN Kanban Board
+# Getting Started with Create React App
 
-A simple Kanban Board application built using the MERN stack (MongoDB, Express, React, Node.js).
-This project helps users manage tasks across different stages like **To Do**, **In Progress**, and **Done**.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 🚧 Project Status
+In the project directory, you can run:
 
-This project is currently a **Work in Progress**.
-Basic backend setup, MongoDB connection, and frontend integration are completed. More features will be added soon.
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🚀 Features
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-* Node.js and Express backend
-* MongoDB Atlas database connection
-* REST API setup
-* React frontend setup
-* Basic Kanban board structure
-* API test route working
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🛠 Tech Stack
+### `npm run build`
 
-### Frontend
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* React.js
-* Axios
-* CSS
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Backend
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* CORS
-* Dotenv
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 📁 Project Structure
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-kanban-app/
-│
-├── server/
-│   ├── client/
-│   ├── models/
-│   ├── routes/
-│   ├── .env
-│   ├── index.js
-│   └── package.json
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## ⚙️ Installation
+## Learn More
 
-### 1. Clone the repository
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-git clone <your-repo-link>
-cd kanban-app/server
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-### 2. Install backend dependencies
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-npm install
+### Analyzing the Bundle Size
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### 3. Add environment variables
+### Making a Progressive Web App
 
-Create a `.env` file inside the `server` folder:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-PORT=8000
-MONGO_URL=your_mongodb_atlas_connection_string
+### Advanced Configuration
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### 4. Start backend server
+### Deployment
 
-npm start
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Backend will run on:
-http://localhost:8000
+### `npm run build` fails to minify
 
----
-
-### 5. Start frontend
-
-cd client
-npm install
-npm start
-
-Frontend will run on:
-http://localhost:3000
-
----
-
-## ✅ Current Progress
-
-* Backend server running successfully
-* MongoDB Atlas connected
-* React app created
-* Basic API route working
-
----
-
-## 🔮 Upcoming Features
-
-* Add task functionality
-* Delete task functionality
-* Update task status
-* Drag and drop Kanban cards
-* User authentication
-* Better UI design
-* Deployment
-
----
-
-## 📌 API Test
-
-GET http://localhost:8000/
-
-Response:
-API is running...
-
----
-
-## 📚 Learning Outcome
-
-Through this project, I am learning:
-
-* MERN stack development
-* Backend API creation
-* MongoDB Atlas integration
-* React frontend integration
-* Full-stack project structure
-
----
-
-## 🙋‍♀️ Author
-
-**Shivani Vishwakarma**
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
